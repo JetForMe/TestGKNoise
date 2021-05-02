@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6BBE1BB263E6605001BB378 /* libnoise.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BBE1BA263E6605001BB378 /* libnoise.dylib */; };
+		C6BBE1BC263E6605001BB378 /* libnoise.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = C6BBE1BA263E6605001BB378 /* libnoise.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		C6BE5F20263AA2900090C6F9 /* TestGKNoiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE5F1F263AA2900090C6F9 /* TestGKNoiseApp.swift */; };
 		C6BE5F22263AA2900090C6F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE5F21263AA2900090C6F9 /* ContentView.swift */; };
 		C6BE5F24263AA2920090C6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BE5F23263AA2920090C6F9 /* Assets.xcassets */; };
 		C6BE5F27263AA2920090C6F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BE5F26263AA2920090C6F9 /* Preview Assets.xcassets */; };
+		C6BE5F32263BEB790090C6F9 /* LNPerlinNoise.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6BE5F31263BEB790090C6F9 /* LNPerlinNoise.mm */; };
+		C6BE5F38263BF8B70090C6F9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE5F37263BF8B70090C6F9 /* Data.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C6BBE1BD263E6605001BB378 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6BBE1BC263E6605001BB378 /* libnoise.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C6BBE1BA263E6605001BB378 /* libnoise.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libnoise.dylib; path = ../../../../../../usr/local/lib/libnoise.dylib; sourceTree = "<group>"; };
 		C6BE5F1C263AA2900090C6F9 /* TestGKNoise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGKNoise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BE5F1F263AA2900090C6F9 /* TestGKNoiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGKNoiseApp.swift; sourceTree = "<group>"; };
 		C6BE5F21263AA2900090C6F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -21,6 +40,12 @@
 		C6BE5F26263AA2920090C6F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6BE5F28263AA2920090C6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6BE5F29263AA2920090C6F9 /* TestGKNoise.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestGKNoise.entitlements; sourceTree = "<group>"; };
+		C6BE5F2F263BEB790090C6F9 /* TestGKNoise-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestGKNoise-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6BE5F30263BEB790090C6F9 /* LNPerlinNoise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNPerlinNoise.h; sourceTree = "<group>"; };
+		C6BE5F31263BEB790090C6F9 /* LNPerlinNoise.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LNPerlinNoise.mm; sourceTree = "<group>"; };
+		C6BE5F34263BEBC80090C6F9 /* libnoise.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnoise.a; path = "../../../../../../usr/local/Cellar/osgeo-libnoise/1.0.0-cmake_1/lib/libnoise.a"; sourceTree = "<group>"; };
+		C6BE5F35263BEBF80090C6F9 /* libnoise.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnoise.a; path = ../../../../../../usr/local/lib/libnoise.a; sourceTree = "<group>"; };
+		C6BE5F37263BF8B70090C6F9 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BBE1BB263E6605001BB378 /* libnoise.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +65,7 @@
 			children = (
 				C6BE5F1E263AA2900090C6F9 /* TestGKNoise */,
 				C6BE5F1D263AA2900090C6F9 /* Products */,
+				C6BE5F33263BEBC70090C6F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,10 +82,14 @@
 			children = (
 				C6BE5F1F263AA2900090C6F9 /* TestGKNoiseApp.swift */,
 				C6BE5F21263AA2900090C6F9 /* ContentView.swift */,
+				C6BE5F30263BEB790090C6F9 /* LNPerlinNoise.h */,
+				C6BE5F31263BEB790090C6F9 /* LNPerlinNoise.mm */,
+				C6BE5F37263BF8B70090C6F9 /* Data.swift */,
 				C6BE5F23263AA2920090C6F9 /* Assets.xcassets */,
 				C6BE5F28263AA2920090C6F9 /* Info.plist */,
 				C6BE5F29263AA2920090C6F9 /* TestGKNoise.entitlements */,
 				C6BE5F25263AA2920090C6F9 /* Preview Content */,
+				C6BE5F2F263BEB790090C6F9 /* TestGKNoise-Bridging-Header.h */,
 			);
 			path = TestGKNoise;
 			sourceTree = "<group>";
@@ -71,6 +102,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C6BE5F33263BEBC70090C6F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6BBE1BA263E6605001BB378 /* libnoise.dylib */,
+				C6BE5F35263BEBF80090C6F9 /* libnoise.a */,
+				C6BE5F34263BEBC80090C6F9 /* libnoise.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +122,7 @@
 				C6BE5F18263AA2900090C6F9 /* Sources */,
 				C6BE5F19263AA2900090C6F9 /* Frameworks */,
 				C6BE5F1A263AA2900090C6F9 /* Resources */,
+				C6BBE1BD263E6605001BB378 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -102,6 +144,7 @@
 				TargetAttributes = {
 					C6BE5F1B263AA2900090C6F9 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -140,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BE5F32263BEB790090C6F9 /* LNPerlinNoise.mm in Sources */,
 				C6BE5F22263AA2900090C6F9 /* ContentView.swift in Sources */,
 				C6BE5F20263AA2900090C6F9 /* TestGKNoiseApp.swift in Sources */,
+				C6BE5F38263BF8B70090C6F9 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +244,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,6 +301,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -268,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TestGKNoise/TestGKNoise.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -283,6 +333,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.TestGKNoise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestGKNoise/TestGKNoise-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -292,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TestGKNoise/TestGKNoise.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -307,6 +360,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.TestGKNoise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestGKNoise/TestGKNoise-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
